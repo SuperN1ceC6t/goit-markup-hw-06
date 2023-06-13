@@ -579,8 +579,11 @@ ol {
   min-width: 264px;
   height: 40px;
   color: #ffffff;
-  margin-right: 24px;
   outline: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
 }
 
 .footer-input::placeholder {
@@ -590,7 +593,6 @@ ol {
   line-height: 24px;
   letter-spacing: 0.04em;
   color: #ffffff;
-  padding-left: 16px;
   padding-top: 8px;
 }
 
@@ -598,7 +600,7 @@ ol {
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 165px;
+  min-width: 165px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -633,6 +635,7 @@ ol {
 }
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 /* ----------------------------Portfolio-MAIN-------------------------------- */
 
@@ -929,7 +932,7 @@ ol {
 }
 
 .submit-button {
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   font-style: normal;
   font-weight: 500;
@@ -952,13 +955,10 @@ ol {
   background-color: #404bbf;
 }
 
-.checkbox:checked + .check-text span {
+.user-privacy:checked + .check-text span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-icon {
@@ -977,16 +977,19 @@ ol {
   margin: 0;
 }
 
-.check-text span {
+.checkbox {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-icon {
